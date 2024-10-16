@@ -1,1 +1,17 @@
-no update for now bro!
+local a = game:GetService("Players")
+local b = a.LocalPlayer
+
+-- Function to copy CFrame to clipboard
+local function d()
+    local e = b.Character
+    if e then
+        local f = e:FindFirstChild("HumanoidRootPart")
+        if f then
+            local g = f.CFrame
+            setclipboard(tostring(g))
+        end
+    end
+end
+
+-- Call the function
+d()
